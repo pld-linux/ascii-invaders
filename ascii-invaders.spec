@@ -1,7 +1,8 @@
 Summary: 	A curses clone of the classic video game Space Invaders
+Summary(pl):	Tekstowy klon klasycznej gry wideo Space Invaders
 Name:		ascii-invaders
 Version:	0.1b
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Games
 Source0:	http://www.ip9.org/munro/invaders/invaders%{version}.tgz
@@ -12,12 +13,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A curses clone of the classic video game Space Invaders.
 
+%description -l pl
+Jest to oparty o bibliotekê curses klon klasycznej gry wideo Space
+Invaders.
+
 %prep
 %setup -q -n invaders
 
 %build
-%{__cc} -c invaders.c -o invaders.o -I%{_includedir}/ncurses
-%{__cc} -lncurses invaders.o -o ascii_invaders 
+%{__cc} %{rpmcflags} -c invaders.c -o invaders.o -I/usr/include/ncurses
+%{__cc} %{rpmldflags} invaders.o -o ascii_invaders -lncurses
 
 %install
 rm -rf $RPM_BUILD_ROOT
