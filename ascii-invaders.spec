@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Games
 Source0:	http://www.ip9.org/munro/invaders/invaders%{version}.tgz
+# Source0-md5:	fbb3f99a1b198bf4222d26a55665482e
 URL:		http://www.ip9.org/munro/invaders/
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
