@@ -1,5 +1,5 @@
 Summary:	A curses clone of the classic video game Space Invaders
-Summary(pl.UTF-8):   Tekstowy klon klasycznej gry wideo Space Invaders
+Summary(pl.UTF-8):	Tekstowy klon klasycznej gry wideo Space Invaders
 Name:		ascii-invaders
 Version:	0.1b
 Release:	2
