@@ -1,5 +1,5 @@
 Summary:	A curses clone of the classic video game Space Invaders
-Summary(pl):	Tekstowy klon klasycznej gry wideo Space Invaders
+Summary(pl.UTF-8):   Tekstowy klon klasycznej gry wideo Space Invaders
 Name:		ascii-invaders
 Version:	0.1b
 Release:	2
@@ -14,8 +14,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A curses clone of the classic video game Space Invaders.
 
-%description -l pl
-Jest to oparty o bibliotekê curses klon klasycznej gry wideo Space
+%description -l pl.UTF-8
+Jest to oparty o bibliotekÄ™ curses klon klasycznej gry wideo Space
 Invaders.
 
 %prep
